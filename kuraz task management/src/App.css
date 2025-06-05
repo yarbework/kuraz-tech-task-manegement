@@ -1,0 +1,158 @@
+.app {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(44, 44, 44, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.task-form,
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form textarea,
+.edit-form input,
+.edit-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.task-form button,
+.edit-form button {
+  padding: 12px 20px;
+  background-color: #63d567;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.task-form button:hover {
+  background-color: #3e8e41;
+}
+
+#update-button {
+  background-color: #e1f720;
+}
+#update-button:hover {
+  background-color: #57df13;
+}
+#cancel-button {
+  background-color: #f74f20;
+}
+#cancel-button:hover {
+  background-color: #74a10a;
+}
+
+.filter-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.filter-sort label {
+  margin-right: 10px;
+}
+
+.filter-sort select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.task-item.completed {
+  background-color: #e8f5e9;
+}
+
+.task-details {
+  flex-grow: 1;
+}
+
+.task-details h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #414040;
+}
+
+.task-details p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.task-actions button:nth-child(1) {
+  background-color: #2196f3; /* Blue */
+  color: white;
+}
+
+.task-actions button:nth-child(1):hover {
+  background-color: #1976d2;
+}
+
+.task-actions button:nth-child(2) {
+  background-color: hsl(62, 100%, 50%); /* Orange */
+  color: white;
+}
+
+.task-actions button:nth-child(2):hover {
+  background-color: #f1f500bd;
+}
+
+.task-actions button:nth-child(3) {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.task-actions button:nth-child(3):hover {
+  background-color: #d32f2f;
+}
